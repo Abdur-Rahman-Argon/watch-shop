@@ -1,19 +1,19 @@
-.cart img {
+.card img {
   width: 150px;
 }
-.cart {
+.card {
   width: 200px;
   border: 1px solid gray;
   border-radius: 15px;
   position: relative;
   height: 300px;
 }
-.cart h1,
+.card h1,
 h3,
 h4 {
   margin: 8px 0px;
 }
-.cart button {
+.card button {
   width: 100%;
   font-size: 20px;
   background-color: aquamarine;
@@ -28,7 +28,7 @@ h4 {
   justify-content: space-evenly;
 }
 
-.cart button:hover {
+.card button:hover {
   background-color: orange;
   color: rgb(61, 52, 52);
 }

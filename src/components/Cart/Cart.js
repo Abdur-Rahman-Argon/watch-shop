@@ -1,10 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import "./Cart.css";
+import pic from "../../images/11873.jpg";
 
 const Cart = (props) => {
+  console.log(props);
   return (
-    <div>
-      <h2>Slected Watch:</h2>
-      <h4>cart iteam{props.cart.length}</h4>
+    <div className="iteam">
+      <img src={pic} alt="" />
+      <h5>{props.product.name}</h5>
+      <button>
+        <FontAwesomeIcon icon={faTrash} />
+      </button>
     </div>
   );
 };

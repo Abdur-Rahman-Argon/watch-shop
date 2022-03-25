@@ -10,6 +10,17 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+.cart .choose-btn {
+  border-radius: 30px;
+  padding: 5px;
+  margin: 5px;
+  background-color: cornflowerblue;
+}
+.cart .select-btn {
+  border-radius: 30px;
+  padding: 5px;
+  background-color: cornflowerblue;
+}
 
 @media only screen and (max-width: 600px) {
   .shop-container {

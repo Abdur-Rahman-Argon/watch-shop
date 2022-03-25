@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import pic from "../../images/11873.jpg";
 import "./Product.css";
 
@@ -8,7 +8,7 @@ const Product = (props) => {
   const { handleAddToCart, product } = props;
   const { id, name, img, price } = product;
   return (
-    <div className="cart">
+    <div className="card">
       <img src={pic} alt="" />
 
       <h3>Name: {name} </h3>
