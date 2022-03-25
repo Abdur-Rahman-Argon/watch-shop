@@ -22,9 +22,22 @@ const Shop = () => {
 
   const handleAddToCart = (product) => {
     const newCart = [...cart, product];
+
     if (newCart.length > 4) {
       return alert("maximum Four iteam select");
-    } else {
+    } else if (
+      newCart[0]?.id === newCart[1]?.id ||
+      newCart[0]?.id === newCart[2]?.id ||
+      newCart[0]?.id === newCart[3]?.id
+    ) {
+      return;
+    } /*  else if (
+      newCart[2]?.id === newCart[1]?.id ||
+      newCart[3]?.id === newCart[2]?.id ||
+      newCart[1]?.id === newCart[3]?.id
+    ) {
+      return;
+    }  */ else {
       setCart(newCart);
     }
   };
