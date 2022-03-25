@@ -5,15 +5,15 @@ import pic from "../../images/11873.jpg";
 import "./Product.css";
 
 const Product = (props) => {
-  const { id, name, img, price } = props.product;
-
+  const { handleAddToCart, product } = props;
+  const { id, name, img, price } = product;
   return (
     <div className="cart">
       <img src={pic} alt="" />
 
       <h3>Name: {name} </h3>
       <h4>Price: ${price}</h4>
-      <button>
+      <button onClick={() => handleAddToCart(props.product)}>
         <span>Add To Cart</span>
         <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
       </button>

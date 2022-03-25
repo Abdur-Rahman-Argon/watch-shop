@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
 
@@ -17,15 +18,24 @@ const Shop = () => {
     { id: 11, name: "Apple Watch Series 5", price: 4820 },
     { id: 12, name: "Apple Watch Nike", price: 5220 },
   ];
+  const [cart, setCart] = useState([]);
+  const handleAddToCart = (product) => {
+    const newCart = [...cart, product];
+    setCart(newCart);
+  };
   return (
     <div className="shop-container">
       <div className="product-container">
         {products.map((product) => (
-          <Product key={product.id} product={product}></Product>
+          <Product
+            key={product.id}
+            product={product}
+            handleAddToCart={handleAddToCart}
+          ></Product>
         ))}
       </div>
       <div className="cart-container">
-        <h2>Slected Watch:</h2>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );
