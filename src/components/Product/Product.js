@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import pic from "../../images/11873.jpg";
 import "./Product.css";
 
 const Product = (props) => {
@@ -10,7 +9,6 @@ const Product = (props) => {
   return (
     <div className="card">
       <img src={img} alt="" />
-
       <h3>Name: {name} </h3>
       <h4>Price: ${price}</h4>
       <button onClick={() => handleAddToCart(props.product)}>
