@@ -9,7 +9,7 @@ const Product = (props) => {
   const { id, name, img, price } = product;
   return (
     <div className="card">
-      <img src={pic} alt="" />
+      <img src={img} alt="" />
 
       <h3>Name: {name} </h3>
       <h4>Price: ${price}</h4>

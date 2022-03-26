@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import Selected from "../Selected/Selected";
@@ -6,20 +6,13 @@ import Selected from "../Selected/Selected";
 import "./Shop.css";
 
 const Shop = () => {
-  const products = [
-    { id: 1, name: "Mi Smart Band 4", price: 6520 },
-    { id: 2, name: "Fitbit FB507BKBK Versa", price: 3128 },
-    { id: 3, name: "Noise Colorfit Pro 2", price: 4123 },
-    { id: 4, name: "HONOR Band 5", price: 2120 },
-    { id: 5, name: "Garmin Forerunner 245", price: 3424 },
-    { id: 6, name: "Samsung Galaxy Watch", price: 4620 },
-    { id: 7, name: "Amazfit Bip U Smart Watch", price: 3849 },
-    { id: 8, name: "Noise ColorFit Pro Smartwatch", price: 5410 },
-    { id: 9, name: "Fastrack Reflex 2.0 Watches ", price: 4320 },
-    { id: 10, name: "Fossil Gen 5 Carlyle ", price: 5120 },
-    { id: 11, name: "Apple Watch Series 5", price: 4820 },
-    { id: 12, name: "Apple Watch Nike", price: 5220 },
-  ];
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
   const [cart, setCart] = useState([]);
 
   const handleAddToCart = (product) => {
@@ -46,7 +39,11 @@ const Shop = () => {
   const [select, setSelect] = useState([]);
   const randomUser = () => {
     const productIteam = Math.floor(Math.random() * cart.length);
-    setSelect(cart[productIteam]);
+    if (cart.length == 0) {
+      return;
+    } else {
+      setSelect(cart[productIteam]);
+    }
   };
   const clearSlectedIteam = () => {
     const cleareCart = [];

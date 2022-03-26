@@ -1,5 +1,12 @@
 .bonus {
   border: 1px solid gray;
+  border-radius: 30px;
   margin: 50px;
   padding: 50px;
+  background-color: rgb(125, 165, 240);
+}
+.question {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
 }

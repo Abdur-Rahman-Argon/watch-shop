@@ -12,14 +12,17 @@
 }
 .cart .choose-btn {
   border-radius: 30px;
-  padding: 5px;
+  padding: 5px 15px;
   margin: 5px;
-  background-color: cornflowerblue;
+  background-color: rgb(66, 12, 133);
+  color: white;
 }
 .cart .select-btn {
-  border-radius: 30px;
-  padding: 5px;
-  background-color: cornflowerblue;
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: 0px;
+  background-color: rgb(66, 12, 133);
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {

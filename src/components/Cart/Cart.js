@@ -2,13 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
-import pic from "../../images/11873.jpg";
 
 const Cart = (props) => {
-  const { name } = props.product;
+  const { name, img } = props.product;
   return (
     <div className="iteam">
-      <img src={pic} alt="" />
+      <img src={img} alt="" />
       <h5>{name}</h5>
       <button>
         <FontAwesomeIcon icon={faTrash} />

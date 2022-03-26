@@ -16,7 +16,8 @@ h4 {
 .card button {
   width: 100%;
   font-size: 20px;
-  background-color: aquamarine;
+  background-color: rgb(66, 12, 133);
+  color: white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   position: absolute;
@@ -29,6 +30,6 @@ h4 {
 }
 
 .card button:hover {
-  background-color: orange;
-  color: rgb(61, 52, 52);
+  background-color: lightgreen;
+  color: rgb(45, 0, 245);
 }

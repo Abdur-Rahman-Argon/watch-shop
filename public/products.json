@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://img.freepik.com/free-vector/smartwatch-with-incoming-call-display_1057-1464.jpg?size=338&ext=jpg&ga=GA1.2.645004496.1648220102",
+    "name": "Mi Smart Band 4",
+    "price": 6520
+  },
+  {
+    "id": 2,
+    "img": "https://img.freepik.com/free-vector/realistic-smart-watch_1284-10933.jpg?size=338&ext=jpg&ga=GA1.2.645004496.1648220102",
+    "name": "Fitbit FB507BKBK Versa",
+    "price": 3128
+  },
+  {
+    "id": 3,
+    "img": "https://img.freepik.com/free-vector/smart-watch-realistic-image-black_1284-11873.jpg?w=740&t=st=1648276217~exp=1648276817~hmac=012255078f4fe62056a6a2e94c962811b13c679d1b185c4f9a516a1431c9e580",
+    "name": "Garmin Forerunner 245",
+    "price": 3424
+  },
+  {
+    "id": 4,
+    "img": "https://img.freepik.com/free-psd/smart-watch_176382-2079.jpg?size=338&ext=jpg&ga=GA1.2.645004496.1648220102",
+    "name": "HONOR Band 5",
+    "price": 2120
+  },
+  {
+    "id": 5,
+    "img": "https://img.freepik.com/free-vector/white-smartwatch-background_1412-32.jpg?size=338&ext=jpg&ga=GA1.2.645004496.1648220102",
+    "name": "Noise Colorfit Pro 2",
+    "price": 4123
+  },
+  {
+    "id": 6,
+    "img": "https://img.freepik.com/free-vector/smart-watch-wearable-phone-call-vector-isolated-illustration_623508-45.jpg?w=740",
+    "name": "Samsung Galaxy Watch",
+    "price": 4620
+  },
+  {
+    "id": 7,
+    "img": "https://img.freepik.com/free-vector/white-smartwatch-background_1412-32.jpg?t=st=1648275313~exp=1648275913~hmac=55db44164a5b6d5c7eb1538f294df065b2b19bc83734b6ae93c13f79379d47dd&w=740",
+    "name": "Amazfit Bip U Smart Watch",
+    "price": 3849
+  },
+  {
+    "id": 8,
+    "img": "https://img.freepik.com/free-psd/presentation-smartwatch-with-screen-mock-up_23-2148787546.jpg?size=626&ext=jpg&ga=GA1.2.645004496.1648220102",
+    "name": "Noise ColorFit Pro Smartwatch",
+    "price": 5410
+  },
+  {
+    "id": 9,
+    "img": "https://img.freepik.com/free-psd/smartwatch-mockup-design-isolated_19223-145.jpg?w=740",
+    "name": "Fastrack Reflex 2.0 Watches ",
+    "price": 4320
+  },
+  {
+    "id": 10,
+    "img": "https://img.freepik.com/free-psd/smartwatch-mockup_92914-352.jpg?w=740",
+    "name": "Fossil Gen 5 Carlyle ",
+    "price": 5120
+  },
+  {
+    "id": 11,
+    "img": "https://img.freepik.com/free-psd/pink-smartwatch-mockup_23-2147862185.jpg?t=st=1648278671~exp=1648279271~hmac=9510dc2993567df94c8b2a5c401e5cdc403038cf8fce396a453cc4b991d43961&w=826",
+    "name": "Apple Watch Series 5",
+    "price": 4820
+  },
+  {
+    "id": 12,
+    "img": "https://img.freepik.com/free-psd/smartwatch-mockup_1332-7621.jpg?t=st=1648278671~exp=1648279271~hmac=e964706217431e09c4c466f2e22273feb45e07504ad244acff39dcb60db926b3&w=740",
+    "name": "Apple Watch Nike",
+    "price": 5220
+  }
+]
