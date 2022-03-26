@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import Selected from "../Selected/Selected";
+
 import "./Shop.css";
 
 const Shop = () => {
@@ -47,7 +48,11 @@ const Shop = () => {
     const productIteam = Math.floor(Math.random() * cart.length);
     setSelect(cart[productIteam]);
   };
-  const clearSlectedIteam = () => {};
+  const clearSlectedIteam = () => {
+    const cleareCart = [];
+    setCart(cleareCart);
+    setSelect(cleareCart);
+  };
 
   return (
     <div className="shop-container">
