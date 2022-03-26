@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
+import Selected from "../Selected/Selected";
 import "./Shop.css";
 
 const Shop = () => {
@@ -41,6 +42,13 @@ const Shop = () => {
       setCart(newCart);
     }
   };
+  const [select, setSelect] = useState([]);
+  const randomUser = () => {
+    const productIteam = Math.floor(Math.random() * cart.length);
+    setSelect(cart[productIteam]);
+  };
+  const clearSlectedIteam = () => {};
+
   return (
     <div className="shop-container">
       <div className="product-container">
@@ -58,9 +66,16 @@ const Shop = () => {
           {cart.map((iteam) => (
             <Cart key={iteam.id} product={iteam}></Cart>
           ))}
-          <button className="choose-btn">Choose One for me</button>
+          <button onClick={randomUser} className="choose-btn">
+            Choose One for me
+          </button>
           <br />
-          <button className="select-btn">Select again</button>
+          <button onClick={clearSlectedIteam} className="select-btn">
+            Select again
+          </button>
+          <div>
+            <Selected key={select.id} selectedProduct={select}></Selected>
+          </div>
         </div>
       </div>
     </div>

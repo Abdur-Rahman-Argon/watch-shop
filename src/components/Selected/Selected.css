@@ -1,0 +1,17 @@
+.selectIteam {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin: 5px;
+}
+
+.selectIteam img {
+  border-radius: 100px;
+  width: 35px;
+  border: 1px solid gray;
+}
+
+.selectIteam h5 {
+  margin: 3px;
+  padding: 5px;
+}
